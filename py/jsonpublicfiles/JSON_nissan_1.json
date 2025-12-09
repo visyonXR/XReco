@@ -1,0 +1,162 @@
+{
+  "$schema": "https://xrcapsule.visyon.tech/schema#",
+  "Metadata": {
+    "FileVersion": "0.0.2",
+    "XRCapsuleEditorVersion": "1.0.0"
+  },
+  "Capsules": [
+    {
+      "Name": "test",
+      "TargetDevices": [
+        "Virtual Production",
+        "Smartphone VR",
+        "Smartphone AR"
+      ],
+      "Workspace": {
+        "Volume": [
+          5,
+          5,
+          5
+        ],
+        "Unit": "Meters"
+      },
+      "Assets": [
+        {
+          "AssetUUID": "e17ed605-0dbf-4ae8-be90-95aec985d720",
+          "Name": "etrongt_obj",
+          "Type": "3D.Model",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/download_procesed_file/k166_k6w/k166_k6w.glb",
+          "Metadata": {
+            "XReco": {
+              "Notes": "3D Model Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "6012fd46-b4ce-42f1-8cec-364db34bf1b9",
+          "Name": "etrongt_obj",
+          "Type": "3D.Model",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/download_procesed_file/k1z1shv0/k1z1shv0.glb",
+          "Metadata": {
+            "XReco": {
+              "Notes": "3D Model Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        }
+      ],
+      "Scene": {
+        "Objects": [
+          {
+            "Name": "etrongt_obj",
+            "AssetUUID": "e17ed605-0dbf-4ae8-be90-95aec985d720",
+            "SceneUUID": "89e9e180-f274-4712-b7df-5efe305eb172",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                12.7726663981055,
+                1.9838121264976998,
+                -3.4771133307430713
+              ],
+              "Rotation": [
+                0,
+                0,
+                0.8165434758466953
+              ],
+              "Scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          {
+            "Name": "etrongt_obj",
+            "AssetUUID": "6012fd46-b4ce-42f1-8cec-364db34bf1b9",
+            "SceneUUID": "9fe84aee-28fc-4f20-9246-e200aae0ac86",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                -9.614857000976698,
+                1.75,
+                5.408446287836726
+              ],
+              "Rotation": [
+                0,
+                -1.0233218904650492,
+                0
+              ],
+              "Scale": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        ],
+        "Triggers": [
+          {
+            "Type": "Rotation",
+            "TriggerParameters": [
+              "time: 00:00:39",
+              "action: 360.000"
+            ],
+            "SceneTargetUUID": "89e9e180-f274-4712-b7df-5efe305eb172",
+            "OnActivate": ""
+          },
+          {
+            "Type": "Rotation",
+            "TriggerParameters": [
+              "time: 00:00:39",
+              "action: 360.000"
+            ],
+            "SceneTargetUUID": "89e9e180-f274-4712-b7df-5efe305eb172",
+            "OnActivate": ""
+          },
+          {
+            "Type": "Rotation",
+            "TriggerParameters": [
+              "time: 00:00:39",
+              "action: 360.000"
+            ],
+            "SceneTargetUUID": "9fe84aee-28fc-4f20-9246-e200aae0ac86",
+            "OnActivate": ""
+          },
+          {
+            "Type": "Rotation",
+            "TriggerParameters": [
+              "time: 00:00:39",
+              "action: 360.000"
+            ],
+            "SceneTargetUUID": "9fe84aee-28fc-4f20-9246-e200aae0ac86",
+            "OnActivate": ""
+          },
+          {
+            "Type": "Scale",
+            "TriggerParameters": [
+              "time: 00:00:41",
+              "action: 2.000"
+            ],
+            "SceneTargetUUID": "9fe84aee-28fc-4f20-9246-e200aae0ac86",
+            "OnActivate": ""
+          }
+        ]
+      }
+    }
+  ]
+}

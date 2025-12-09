@@ -1,0 +1,81 @@
+.App-headerL {
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(145deg, #3d3d3d 0%, #2e2e2e 100%);
+    border-bottom: 1px solid #4a4a4a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    color: #e0e0e0;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-label {
+    font-size: 24px;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+.nav-button {
+    margin-left: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ec655f;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  
+.nav-button:hover {
+    background-color: #6f50f6;
+  }
+
+.xreco-logo{
+    width: 100px;
+    margin-left: 25px;
+}
+
+.left-textL{
+    color: #e0e0e0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.left-textL:hover {
+    color: #4a90e2;
+}
+
+.right-textL{
+    color: #cccccc;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.right-textL:hover {
+    color: #e0e0e0;
+}
+
+.right-textL{
+    color: black;
+    cursor: pointer;
+    pointer-events: all;
+    font-weight: bold;
+}

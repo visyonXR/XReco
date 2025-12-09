@@ -1,0 +1,80 @@
+{
+	"Workspace": {
+		"Volume":[25.0, 28.0 ,0.1]
+	},
+	"Templates": [
+		{
+			"TargetDevices": [
+				"Virtual Production"
+			],
+			"Assets": [
+				{
+					"UUID": "987654321",
+					"Name": "Palast der Republik",
+					"Type": "3D Model",
+					"SourceURL": "https://xreco.az.mog-technologies.com/assets/newversion.obj",
+					"Metadata": {
+						"XReco": {
+							"Notes": "Check XReco for more models.",
+							"BoundingBox": [4.0, 2.0, 3.2],
+							"Polygons": 10000,
+							"Resolution": null
+
+						}	
+					}
+				}
+			],
+			"Scene": {
+				"Objects": [
+					{
+						"UUID": "f40e6f34-5fc0-4b4d-8534-94d657cd2e03",
+						"Visible": true,
+						"Enabled": true,
+						"Transform": {
+							"Position": [10.0, 10.0, 10.0],
+							"Rotation": [180, 0.0, 0.0],
+							"Scale": [5.0, 5.0, 5.0]
+						},
+						"Play": {
+							"AutoStart": false,
+							"Reversed": false,
+							"Loop": true,
+							"LoopIterations": -1,
+							"StartAt": 0.0,
+							"StopAt": -1.0,
+							"PlayRate": 1.0,
+							"Stereo": "SideBySide"
+						}
+					},
+					{
+						"UUID": "69f1ecd1-9e5f-496c-a3f1-1af66fed5c77",
+						"Visible": true,
+						"Enabled": true,
+						"Transform": {
+							"Position": [2.0, 8.35, 6.0],
+							"Rotation": [0, 0.0, 43.0],
+							"Scale": [1.0, 1.0, 1.0]
+						},
+						"Play": {
+							"AutoStart": false,
+							"Reversed": false,
+							"Loop": false,
+							"LoopIterations": -1,
+							"StartAt": 0.0,
+							"StopAt": -1.0,
+							"PlayRate": 1.0,
+							"Stereo": null
+						}
+					}
+				],
+				"Triggers": [
+					{
+						"Type": "GPS",
+						"Target": "69f1ecd1-9e5f-496c-a3f1-1af66fed5c77",
+						"OnEnter": ""
+					}
+				]
+			}
+		}
+	]
+}

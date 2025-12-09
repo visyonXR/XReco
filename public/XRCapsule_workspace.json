@@ -1,0 +1,88 @@
+{
+	"$schema": "https://xrcapsule.visyon.tech/schema#",
+	"Metadata": {
+		"FileVersion": "0.0.2",
+		"XRCapsuleEditorVersion": "1.0.0"
+	},
+	"Capsules": [
+		{
+			"Name": "Test XRCapsule",
+			"TargetDevices": [
+				"Virtual Production",
+				"Smartphone VR",
+				"Smartphone AR"
+			],
+			"Workspace": {
+				"Volume":[5.0, 5.0 ,5.0], 
+				"Unit": "Meters"
+			},
+			"Assets": [
+				{
+					"AssetUUID": "307efcff-d5bf-4d38-9be3-505fc09ab56d",
+					"Name": "etron_obj",
+					"Type": "3D.Model",
+					"SourceURL": "https://flask-xrcapsule.visyon.tech/download_procesed_file/cjlzqk1i/cjlzqk1i.glb",
+					"Metadata": {
+						"XReco": {
+							"Notes": "3D Model Processor Service",
+							"BoundingBox": [1.0, 1.0, 1.0],
+							"Polygons": 0,
+							"Resolution": null
+						}	
+					}
+				},
+				{
+					"AssetUUID": "7c2c92bf-0a15-42cc-8dda-ff749c66446e",
+					"Name": "etron2_obj",
+					"Type": "3D.Model",
+					"SourceURL": "https://flask-xrcapsule.visyon.tech/download_procesed_file/cjlzqk1i2/cjlzqk1i2.glb",
+					"Metadata": {
+						"XReco": {
+							"Notes": "3D Model Processor Service",
+							"BoundingBox": [1.0, 1.0, 1.0],
+							"Polygons": 0,
+							"Resolution": null
+						}	
+					}
+				}
+			],
+			"Scene": {
+				"Objects": [
+					{
+						"Name": "etron_obj",
+						"AssetUUID": "307efcff-d5bf-4d38-9be3-505fc09ab56d",
+						"SceneUUID": "7e424058-2bff-4794-9caa-c735912b2262",
+						"Visible": true,
+						"Enabled": true,
+						"Transform": {
+							"Position": [2.781, 0.747, -2.393],
+							"Rotation": [0.0, 0.0, 0.0],
+							"Scale": [1.0, 1.0, 1.0]
+						}
+					},
+					{
+						"Name": "etron_obj2",
+						"AssetUUID": "7c2c92bf-0a15-42cc-8dda-ff749c66446e",
+						"SceneUUID": "e4534d76-68bc-41b2-8856-80d49a358e6e",
+						"Visible": true,
+						"Enabled": true,
+						"Transform": {
+							"Position": [2.781, 0.747, -2.393],
+							"Rotation": [0.0, 0.0, 0.0],
+							"Scale": [1.0, 1.0, 1.0]
+						}
+					}
+				],
+				"Triggers": [
+					{
+						"Type": "Touch.Simple",
+						"TriggerParameters": ["One", "Two", "Three"],
+						"SceneTargetUUID": "",
+						"OnActivate": ""
+					}
+				]
+			}
+		}
+	]
+}
+

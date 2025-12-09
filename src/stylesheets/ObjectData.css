@@ -1,0 +1,415 @@
+/* Maya-style Inspector CSS */
+
+.object-data-container {
+  grid-area: inspector;
+  background: linear-gradient(180deg, #3c3c3c 0%, #2e2e2e 50%, #262626 100%);
+  color: #cccccc;
+  padding: 0;
+  border-left: 1px solid #555555;
+  box-shadow: 
+    inset 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    -2px 0 8px rgba(0, 0, 0, 0.3);
+  pointer-events: all;
+  overflow-y: auto;
+  height: 100vh;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-size: 11px;
+}
+
+/* Maya-style header */
+.object-data-container h3 {
+  margin: 0;
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #404040 0%, #383838 50%, #343434 100%);
+  border-bottom: 1px solid #1a1a1a;
+  border-top: 1px solid #5a5a5a;
+  color: #e0e0e0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Maya-style sections */
+.field-container {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+.field-container:last-child {
+  border-bottom: none;
+}
+
+.field {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field label {
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 11px;
+  min-width: 16px;
+  text-align: center;
+  background: linear-gradient(180deg, #4a4a4a 0%, #3a3a3a 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 3px;
+  padding: 4px 6px;
+  margin-right: 4px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Maya-style input fields */
+.rounded-input,
+.rounded-input-trigger,
+.rounded-inspector,
+.rounded-inspector-name,
+.rounded-inspector-camera {
+  background: linear-gradient(180deg, #2a2a2a 0%, #1e1e1e 100%);
+  border: 1px solid #404040;
+  border-radius: 2px;
+  color: #cccccc;
+  font-size: 11px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  padding: 4px 6px;
+  text-align: center;
+  transition: all 0.15s ease;
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  pointer-events: all;
+}
+
+.rounded-input:focus,
+.rounded-input-trigger:focus,
+.rounded-inspector:focus,
+.rounded-inspector-name:focus,
+.rounded-inspector-camera:focus {
+  background: linear-gradient(180deg, #3a3a3a 0%, #2e2e2e 100%);
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 0 0 1px rgba(74, 144, 226, 0.3);
+}
+
+.rounded-input:hover,
+.rounded-input-trigger:hover,
+.rounded-inspector:hover,
+.rounded-inspector-name:hover,
+.rounded-inspector-camera:hover {
+  border-color: #555555;
+  background: linear-gradient(180deg, #343434 0%, #282828 100%);
+}
+
+/* Specific input field sizing */
+.rounded-inspector {
+  width: 25%;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.rounded-inspector-name {
+  width: 100%;
+  margin: 8px 0 16px 0;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.rounded-inspector-camera {
+  width: 25%;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.rounded-input-trigger {
+  width: 85%;
+  height: 24px;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+.rounded-input {
+  width: 40%;
+  margin: 2px;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+/* Maya-style select dropdowns */
+.select-trigger {
+  background: linear-gradient(180deg, #3a3a3a 0%, #2e2e2e 100%);
+  border: 1px solid #404040;
+  border-radius: 2px;
+  color: #cccccc;
+  padding: 6px 8px;
+  margin: 2px 0 2px 8px;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 11px;
+  transition: all 0.15s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.select-trigger:hover {
+  background: linear-gradient(180deg, #444444 0%, #383838 100%);
+  border-color: #555555;
+}
+
+.select-trigger:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(74, 144, 226, 0.3);
+}
+
+/* Maya-style buttons */
+.select-trigger-button-up,
+.select-trigger-button-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(180deg, #4a4a4a 0%, #3a3a3a 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  color: #cccccc;
+  cursor: pointer;
+  margin-left: 8px;
+  pointer-events: all;
+  transition: all 0.15s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.select-trigger-button-up:hover,
+.select-trigger-button-down:hover {
+  background: linear-gradient(180deg, #555555 0%, #454545 100%);
+  border-color: #555555;
+}
+
+.select-trigger-button-up:active,
+.select-trigger-button-down:active {
+  background: linear-gradient(180deg, #353535 0%, #2a2a2a 100%);
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Maya-style section dividers */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #404040 20%, #404040 80%, transparent 100%);
+  margin: 16px 0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Maya-style labels and text */
+span {
+  color: #b8b8b8;
+  font-size: 11px;
+}
+
+.labelApp {
+  color: #b8b8b8;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Maya-style triggers section */
+.triggers-container {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  padding: 12px;
+  margin: 8px 0;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.triggers-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.triggers-div {
+  min-width: 120px;
+}
+
+.triggers-label {
+  color: #b8b8b8;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Maya-style action buttons */
+.button-model,
+.apply-button,
+.close-button,
+.delete-button,
+.gotoView-button {
+  background: linear-gradient(180deg, #4a90e2 0%, #357abd 100%);
+  border: 1px solid #2e6ba0;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 8px auto;
+  display: block;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.15s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 32px;
+  text-align: center;
+}
+
+.button-model:hover,
+.apply-button:hover,
+.close-button:hover,
+.gotoView-button:hover {
+  background: linear-gradient(180deg, #5ba0f2 0%, #4680cd 100%);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 3px 6px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+.button-model:active,
+.apply-button:active,
+.close-button:active,
+.gotoView-button:active {
+  background: linear-gradient(180deg, #357abd 0%, #2e6ba0 100%);
+  box-shadow: 
+    inset 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+/* Delete button styling */
+.delete-button {
+  background: linear-gradient(180deg, #d9534f 0%, #c9302c 100%);
+  border-color: #ac2925;
+}
+
+.delete-button:hover {
+  background: linear-gradient(180deg, #e9635f 0%, #d9433c 100%);
+}
+
+.delete-button:active {
+  background: linear-gradient(180deg, #c9302c 0%, #ac2925 100%);
+}
+
+/* Go to view button styling */
+.gotoView-button {
+  background: linear-gradient(180deg, #5cb85c 0%, #449d44 100%);
+  border-color: #398439;
+}
+
+.gotoView-button:hover {
+  background: linear-gradient(180deg, #6cc86c 0%, #559d55 100%);
+}
+
+.gotoView-button:active {
+  background: linear-gradient(180deg, #449d44 0%, #398439 100%);
+}
+
+/* Maya-style camera controls */
+.fieldCameras {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.dropViwInfoCamera {
+  color: #b8b8b8;
+  cursor: pointer;
+  pointer-events: all;
+  padding: 4px;
+  transition: color 0.15s ease;
+}
+
+.dropViwInfoCamera:hover {
+  color: #ffffff;
+}
+
+/* Special highlighting */
+.highlighted {
+  border-color: #ffd700 !important;
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.4),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 0 0 1px rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Icons styling */
+.iconTrash,
+.iconVideo {
+  color: #b8b8b8;
+  cursor: pointer;
+  pointer-events: all;
+  transition: color 0.15s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  display: inline-block;
+}
+
+.iconTrash:hover {
+  color: #d9534f;
+}
+
+.iconVideo:hover {
+  color: #5cb85c;
+}
+
+/* Maya-style animation for field containers */
+.field-container {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(-4px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}

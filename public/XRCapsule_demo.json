@@ -1,0 +1,74 @@
+{
+  "$schema": "https://xrcapsule.visyon.tech/schema#",
+  "Metadata": {
+    "FileVersion": "0.0.2",
+    "XRCapsuleEditorVersion": "1.0.0"
+  },
+  "Capsules": [
+    {
+      "Name": "Test",
+      "TargetDevices": [
+        "Virtual Production",
+        "Smartphone VR",
+        "Smartphone AR"
+      ],
+      "Workspace": {
+        "Volume": [
+          250,
+          500,
+          500
+        ],
+        "Unit": "Centimeters"
+      },
+      "Assets": [
+        {
+          "AssetUUID": "d99a4ab8-696e-4bf5-a8a8-92ad290c543a",
+          "Name": "DECIMATED",
+          "Type": "3D.Model",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/download_procesed_file/mh2e2svu/mh2e2svu.glb",
+          "Metadata": {
+            "XReco": {
+              "Notes": "3D Model Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        }
+      ],
+      "Scene": {
+        "Objects": [
+          {
+            "Name": "DECIMATED",
+            "AssetUUID": "d99a4ab8-696e-4bf5-a8a8-92ad290c543a",
+            "SceneUUID": "cce58273-ae51-4af8-9a5a-f575363349d6",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "0.000",
+                "0.000",
+                "0.000"
+              ],
+              "Rotation": [
+                "0.000",
+                "0.000",
+                "0.000"
+              ],
+              "Scale": [
+                "1.000",
+                "1.000",
+                "1.000"
+              ]
+            }
+          }
+        ],
+        "Triggers": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+/* StatusBar.css - Maya-style status bar */
+
+.status-bar {
+  position: fixed !important; /* Fixed to the viewport bottom */
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+  height: 24px !important; /* Professional height */
+  background: linear-gradient(180deg, #434343 0%, #2e2e2e 50%, #1e1e1e 100%) !important; /* Maya-style gradient */
+  border-top: 1px solid #5a5a5a !important;
+  border-bottom: 1px solid #0a0a0a !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 8px !important;
+  font-family: 'Segoe UI', 'Arial', sans-serif !important;
+  font-size: 11px !important;
+  color: #cccccc !important; /* Professional gray text */
+  z-index: 99999 !important; /* Maximum z-index */
+  user-select: none !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 -2px 8px rgba(0, 0, 0, 0.3) !important;
+  pointer-events: auto !important;
+  flex-shrink: 0 !important;
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 100%;
+}
+
+.status-label {
+  color: #b0b0b0;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-value {
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 11px;
+  min-width: 20px;
+  text-align: left;
+}
+
+.status-separator {
+  width: 1px;
+  height: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(0, 0, 0, 0.3) 100%);
+  margin: 0 2px;
+}
+
+.status-selected {
+  background: rgba(74, 144, 226, 0.15);
+  border-radius: 3px;
+  margin: 2px 0;
+  padding: 0 8px;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.status-selected .status-label {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.status-selected .status-value {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.status-spacer {
+  flex: 1;
+}
+
+.status-right {
+  margin-left: auto;
+  padding-right: 8px;
+}
+
+.status-version {
+  color: #888888;
+  font-size: 9px;
+  margin-left: 4px;
+  font-style: italic;
+}
+
+/* Hover effects for interactive sections */
+.status-section:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.status-section:hover .status-label {
+  color: #d0d0d0;
+}
+
+.status-section:hover .status-value {
+  color: #ffffff;
+}
+
+/* Maya-style pressed effect */
+.status-section:active {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .status-bar {
+    font-size: 10px;
+  }
+  
+  .status-label {
+    font-size: 9px;
+  }
+  
+  .status-value {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .status-section {
+    padding: 0 4px;
+    gap: 2px;
+  }
+  
+  .status-separator {
+    margin: 0 1px;
+  }
+}
+
+/* Animation for value changes */
+.status-value {
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.status-value:hover {
+  transform: scale(1.05);
+}
+
+/* Special styling for critical stats */
+.status-section:nth-child(1) .status-value, /* Objects */
+.status-section:nth-child(3) .status-value, /* Vertices */
+.status-section:nth-child(5) .status-value { /* Faces */
+  color: #ffd700; /* Gold for primary stats */
+}
+
+/* Memory and performance indicators could be added here */
+.status-performance {
+  color: #90EE90; /* Light green for good performance */
+}
+
+.status-warning {
+  color: #FFB366; /* Orange for warnings */
+}
+
+.status-error {
+  color: #FF6B6B; /* Red for errors */
+}
+
+/* Progress bar styles */
+.status-progress-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.status-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.status-progress-text {
+  color: #e0e0e0;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.status-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  border: 1px solid #333333;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 
+    inset 0 1px 2px rgba(0, 0, 0, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.status-progress-fill {
+  height: 100%;
+  background: linear-gradient(180deg, #4a90e2 0%, #357abd 100%);
+  border-radius: 1px;
+  transition: width 0.3s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 4px rgba(74, 144, 226, 0.3);
+  animation: progressPulse 2s ease-in-out infinite;
+}
+
+.status-progress-percent {
+  color: #b0b0b0;
+  font-size: 10px;
+  font-weight: 400;
+  min-width: 35px;
+  text-align: right;
+}
+
+@keyframes progressPulse {
+  0%, 100% {
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      0 0 4px rgba(74, 144, 226, 0.3);
+  }
+  50% {
+    box-shadow: 
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      0 0 8px rgba(74, 144, 226, 0.5);
+  }
+}

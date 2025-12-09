@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload GLB/GLTF/OBJ/FBX/USDZ File</title>
+</head>
+<body>
+    <h1>Upload GLB/GLTF/OBJ/FBX/USDZ File</h1>
+    <div class='field'>
+        <input id='fileInput' class='button-model' type="file" multiple webkitdirectory directory onchange="uploadFile(event)" />
+    </div>
+    <div id="message"></div>
+    <script>
+        function uploadFile(event) {
+            var input = event.target;
+            var files = input.files;
+            var formData = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+                formData.append('paths', files[i].webkitRelativePath);
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/read_3D_model');
+            xhr.responseType = 'blob';
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var contentType = xhr.getResponseHeader('Content-Type');
+                        var contentDisposition = xhr.getResponseHeader('Content-Disposition');
+                        console.log(contentDisposition);
+                        var fileName = contentDisposition.split('filename=')[1];
+                        console.log(fileName);
+
+                        var blob = new Blob([xhr.response], { type: contentType });
+
+                        var url = window.URL.createObjectURL(blob);
+                        var a = document.createElement('a');
+                        a.href = url;
+                        a.download = fileName;
+                        document.body.appendChild(a);
+                        a.click();
+                        a.remove();
+                        input.value = null;
+                    } else {
+                        var errorMessage = 'Error uploading the file: ' + xhr.statusText;
+                        document.getElementById('message').innerText = errorMessage;
+                        console.error(errorMessage);
+                    }
+                }
+            };
+
+            xhr.onerror = function() {
+                var errorMessage = 'Error de red al cargar el archivo.';
+                document.getElementById('message').innerText = errorMessage;
+                console.error(errorMessage);
+            };
+
+            xhr.send(formData);
+        }
+    </script>
+</body>
+</html>

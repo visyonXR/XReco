@@ -1,0 +1,90 @@
+.container-TS {
+  grid-area: canvas;
+  position: relative;
+  background: linear-gradient(135deg, #2a2e33 0%, #1a1e23 100%);
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+  
+.canvas-TS {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  pointer-events: auto;
+}
+  
+  .button-TS {
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 1000 !important;
+    background: rgba(45, 49, 55, 0.95) !important;
+    border: 2px solid #4a90e2 !important;
+    border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.2s ease;
+  }
+  
+  .button-TS:hover {
+    background: rgba(70, 130, 180, 0.9) !important;
+    border-color: #5ba0f2 !important;
+    transform: scale(1.05);
+  }
+  
+  .icon-TS {
+    color: #fff !important;
+    font-size: 20px;
+  }
+
+  .transform-gizmo-size-indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    background: rgba(45, 49, 55, 0.95);
+    border: 1px solid #404040;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #ccc;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: transformGizmoSizeFadeIn 0.3s ease-out;
+    pointer-events: none;
+  }
+
+  @keyframes transformGizmoSizeFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Ensure navigation gizmo is visible */
+  .canvas-TS > div > div > div > div:last-child {
+    z-index: 1000 !important;
+    position: relative !important;
+  }
+  

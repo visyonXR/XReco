@@ -1,0 +1,138 @@
+.contenedor-form {
+    display: none;
+}
+  
+  .boton-persIcon-container{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .button-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }  
+  
+  .button-code-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  .boton-persIcon {
+    width: 35px;
+    height: 35px;
+    background-color: #191a1d;
+    color: #ccc;
+    border-radius: 50%;
+    border: 1px solid #646464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 15px;
+    pointer-events: all;
+  }
+  
+  .boton-persIcon:hover {
+    background-color: #3a3e47;
+  }
+  
+  .nombre-proyecto {
+    font-size: 16px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    max-width: 350px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .button-code {
+    width: 150px;
+    height: 40px;
+    background-color: #191a1d; 
+    color: #ccc;
+    border-radius: 20px;
+    border: 1px solid #646464;
+    cursor: pointer;
+    margin-left: 15px;
+    pointer-events: all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .button-code:hover {
+    background-color: #3a3e47;
+  }
+  
+  .button-json-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+  .download-json-button {
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #191a1d; 
+    color: #ccc;
+    border-radius: 20px;
+    border: 1px solid #646464;
+    cursor: pointer;
+    display: block;
+    pointer-events: all;
+  }
+  
+  .download-json-button:hover {
+    background-color: #3a3e47;
+  }
+
+  .close-button-PuP {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #191a1d;
+    border-color: #ccc;
+    color: #ccc;
+    border: 1px solid #646464;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+  }
+  
+  .close-button-PuP:hover {
+    background-color: #3a3e47;
+  }
+
+  .loader {
+    border: 8px solid #3a3e47;
+    border-top: 8px solid #646464; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 15px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -1,0 +1,118 @@
+{
+  "$schema": "https://xrcapsule.visyon.tech/schema#",
+  "Metadata": {
+    "FileVersion": "0.0.2",
+    "XRCapsuleEditorVersion": "1.0.0"
+  },
+  "Capsules": [
+    {
+      "Name": "Virtual Production",
+      "TargetDevices": [
+        "Smartphone AR",
+        "Smartphone 3D Viewer",
+        "Quest 3 AR",
+        "Infographics",
+        "Virtual Production"
+      ],
+      "Workspace": {
+        "Volume": [
+          30,
+          30,
+          8
+        ],
+        "Unit": "Meters"
+      },
+      "Assets": [
+        {
+          "AssetUUID": "be819678-6932-46b2-a867-42a3f9b512ce",
+          "Name": "desk",
+          "Type": "3D.Model",
+          "SourceURL": "http://localhost:3000/public/desk.glb",
+          "Metadata": {
+            "XReco": {
+              "Notes": "3D Model Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "01961764-7ed8-45ea-9467-6a4894cae960",
+          "Name": "presenter",
+          "Type": "3D.Model",
+          "SourceURL": "http://localhost:3000/public/presenter.glb",
+          "Metadata": {
+            "XReco": {
+              "Notes": "3D Model Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        }
+      ],
+      "Scene": {
+        "Objects": [
+          {
+            "Name": "desk",
+            "AssetUUID": "be819678-6932-46b2-a867-42a3f9b512ce",
+            "SceneUUID": "26b5b482-06c6-4c6d-9785-b92781548ada",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                0,
+                0.5,
+                -8
+              ],
+              "Rotation": [
+                0,
+                0,
+                0
+              ],
+              "Scale": [
+                1.87,
+                1.87,
+                1.87
+              ]
+            }
+          },
+          {
+            "Name": "presenter",
+            "AssetUUID": "01961764-7ed8-45ea-9467-6a4894cae960",
+            "SceneUUID": "9f66a329-2a60-4b47-85fa-3de1d1206af4",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                0,
+                0.5,
+                -9.5
+              ],
+              "Rotation": [
+                0,
+                0,
+                0
+              ],
+              "Scale": [
+                1.75,
+                1.75,
+                1.75
+              ]
+            }
+          }
+        ],
+        "Triggers": []
+      }
+    }
+  ]
+}

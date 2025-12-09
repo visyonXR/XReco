@@ -1,0 +1,298 @@
+.App-project {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Override global body pointer-events: none */
+body.login-active {
+  pointer-events: auto !important;
+}
+
+body.login-active * {
+  pointer-events: auto !important;
+}
+
+.gradient-backgroundL {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #2b2b2b 0%, #1e1e1e 50%, #2b2b2b 100%);
+  position: relative;
+  pointer-events: auto !important;
+}
+
+.gradient-backgroundL::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(70, 130, 180, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.modalLogin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  height: auto;
+  background: linear-gradient(145deg, #393939 0%, #2e2e2e 100%);
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 9999;
+  overflow: visible;
+  animation: modalFadeIn 0.3s ease-out;
+  pointer-events: auto;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.h2L {
+  color: #e0e0e0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid #4a4a4a;
+  background: linear-gradient(145deg, #3d3d3d 0%, #353535 100%);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+  .modal-json {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1010px;
+    height: 710px;
+    background: #191a1d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: all;
+    background-color: #191a1d;
+  }
+
+  .modal-main h2 {
+    text-align: center;
+  }
+
+  .modal-json textarea{
+    background-color: #3a3e47;
+    width: 1000px;
+    height: 600px;
+    border-radius: 8px;
+    color: #ccc
+  }
+  
+  .modal-json h3{
+    color: grey;
+  }
+  
+  .display-block {
+    display: block !important;
+    pointer-events: auto !important;
+  }
+  
+  .display-none {
+    display: none !important;
+    pointer-events: none !important;
+  }
+  
+  .formPopUpL {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    background: #2e2e2e;
+    pointer-events: auto;
+  }
+
+  .formPopUpL > div {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    position: relative;
+  }
+  
+  .labelPopUpL {
+    color: #cccccc;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    user-select: none;
+  }
+
+  .labelPopUpL:hover {
+    color: #e0e0e0;
+  }
+  
+.inputPopUpL,
+.selectPopUpL {
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    font-size: 14px;
+    background: linear-gradient(145deg, #1e1e1e 0%, #262626 100%);
+    color: #e0e0e0;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    position: relative;
+    cursor: text;
+    pointer-events: auto !important;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+.inputPopUpL:hover,
+.selectPopUpL:hover {
+    border-color: #5a5a5a;
+    background: linear-gradient(145deg, #252525 0%, #2d2d2d 100%);
+    box-shadow: 0 0 0 1px rgba(74, 144, 226, 0.1);
+    cursor: text;
+}
+
+.inputPopUpL:focus,
+.selectPopUpL:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 
+      0 0 0 2px rgba(74, 144, 226, 0.2),
+      inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #252525 0%, #2d2d2d 100%);
+    cursor: text;
+}
+
+.inputPopUpL:active,
+.selectPopUpL:active {
+    border-color: #4a90e2;
+    background: linear-gradient(145deg, #252525 0%, #2d2d2d 100%);
+}
+
+.inputPopUpL::placeholder {
+    color: #888888;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .modalLogin {
+    width: 90%;
+    margin: 0 20px;
+  }
+  
+  .formPopUpL {
+    padding: 24px 20px;
+  }
+}
+
+
+  .popup-button-inL {
+    background: linear-gradient(145deg, #4a90e2 0%, #357abd 100%);
+    color: #ffffff;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    pointer-events: auto !important;
+    user-select: none;
+}
+  
+  .popup-button-inL:hover {
+    background: linear-gradient(145deg, #5ba0f2 0%, #4a90e2 100%);
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .popup-button-inL:active {
+    background: linear-gradient(145deg, #357abd 0%, #2e6ba0 100%);
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.3),
+      inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+
+  .popup-button-inL:disabled {
+    background: linear-gradient(145deg, #666666 0%, #555555 100%);
+    color: #999999;
+    cursor: not-allowed;
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: none;
+  }
+
+  .popup-button-inL:disabled:hover {
+    background: linear-gradient(145deg, #666666 0%, #555555 100%);
+    transform: none;
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .input-group {
+    display: flex;
+    gap: 5px; 
+  }
+  
+  #dimensionX,
+  #dimensionY {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .error-message{
+    color: #ff6b6b;
+    font-size: 12px;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+  }

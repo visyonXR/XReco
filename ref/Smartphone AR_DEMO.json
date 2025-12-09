@@ -1,0 +1,244 @@
+{
+  "$schema": "https://xrcapsule.visyon.tech/schema#",
+  "Metadata": {
+    "FileVersion": "0.0.2",
+    "XRCapsuleEditorVersion": "1.0.0"
+  },
+  "Capsules": [
+    {
+      "Name": "DEMO",
+      "TargetDevices": "Blank",
+      "Workspace": {
+        "Volume": [
+          5,
+          5,
+          2.5
+        ],
+        "Unit": "meters",
+        "Environment": {
+          "Name": "2",
+          "Type": "HDRi",
+          "SourceURL": "https://xrcapsule.visyon.tech/public/buikslotermeerplein_2k.hdr"
+        }
+      },
+      "Assets": [
+        {
+          "AssetUUID": "37f250e7f0dd4588b6510c80008c59b2",
+          "Name": "65173567_304.jpg",
+          "Type": "Image",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/uploads/images/37f250e7f0dd4588b6510c80008c59b2/65173567_304.jpg",
+          "Metadata": {
+            "XReco": {
+              "Notes": "Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "cf4d2b2bd50c4aa19a488897b16fab62",
+          "Name": "Barcelona_collage.JPG",
+          "Type": "Image",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/uploads/images/cf4d2b2bd50c4aa19a488897b16fab62/Barcelona_collage.JPG",
+          "Metadata": {
+            "XReco": {
+              "Notes": "Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "909bc6a953b74c2b8881251e062b7c39",
+          "Name": "Evening_light_over_Barcelona.jpg",
+          "Type": "Image",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/uploads/images/909bc6a953b74c2b8881251e062b7c39/Evening_light_over_Barcelona.jpg",
+          "Metadata": {
+            "XReco": {
+              "Notes": "Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "ff6a4f54f5f24e75816dd895b88e1866",
+          "Name": "Barcelona_-_Farola_Avenida_Gaudi.jpg",
+          "Type": "Image",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/uploads/images/ff6a4f54f5f24e75816dd895b88e1866/Barcelona_-_Farola_Avenida_Gaudi.jpg",
+          "Metadata": {
+            "XReco": {
+              "Notes": "Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        },
+        {
+          "AssetUUID": "7167ba1e991446878a9abcd2adcb0c35",
+          "Name": "BUSIENG240822_BENG_SARDINIEN_01SMW_AVC_512x288.mp4",
+          "Type": "Video",
+          "SourceURL": "https://flask-xrcapsule.visyon.tech/uploads/video/7167ba1e991446878a9abcd2adcb0c35/BUSIENG240822_BENG_SARDINIEN_01SMW_AVC_512x288.mp4",
+          "Metadata": {
+            "XReco": {
+              "Notes": "Processor Service",
+              "BoundingBox": [
+                1,
+                1,
+                1
+              ],
+              "Polygons": 0,
+              "Resolution": null
+            }
+          }
+        }
+      ],
+      "Scene": {
+        "Cameras": [],
+        "Objects": [
+          {
+            "Name": "65173567_304.jpg",
+            "AssetUUID": "37f250e7f0dd4588b6510c80008c59b2",
+            "SceneUUID": "7e26af1b-2761-41e4-9443-210a26c313bf",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "2.000",
+                "1.548",
+                "-4.932"
+              ],
+              "Rotation": [
+                "-37.529",
+                "15.011",
+                "6.474"
+              ],
+              "Scale": [
+                "1.000",
+                "1.000",
+                "1.000"
+              ]
+            }
+          },
+          {
+            "Name": "Barcelona_collage.JPG",
+            "AssetUUID": "cf4d2b2bd50c4aa19a488897b16fab62",
+            "SceneUUID": "b1ee6823-5f6d-490e-9ccc-34d0febb2dad",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "-5.708",
+                "0.000",
+                "-1.613"
+              ],
+              "Rotation": [
+                "0.000",
+                "56.648",
+                "0.000"
+              ],
+              "Scale": [
+                "5.000",
+                "5.000",
+                "5.000"
+              ]
+            }
+          },
+          {
+            "Name": "Evening_light_over_Barcelona.jpg",
+            "AssetUUID": "909bc6a953b74c2b8881251e062b7c39",
+            "SceneUUID": "b9162142-26ea-43b0-8df0-5f6456e98bc3",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "4.663",
+                "1.750",
+                "2.900"
+              ],
+              "Rotation": [
+                "0.000",
+                "0.000",
+                "0.000"
+              ],
+              "Scale": [
+                "1.000",
+                "1.000",
+                "1.000"
+              ]
+            }
+          },
+          {
+            "Name": "Barcelona_-_Farola_Avenida_Gaudi.jpg",
+            "AssetUUID": "ff6a4f54f5f24e75816dd895b88e1866",
+            "SceneUUID": "96b7c19a-53d7-489e-ac2e-7687d65338c9",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "-4.944",
+                "1.750",
+                "-0.200"
+              ],
+              "Rotation": [
+                "0.000",
+                "0.000",
+                "0.000"
+              ],
+              "Scale": [
+                "1.000",
+                "1.000",
+                "1.000"
+              ]
+            }
+          },
+          {
+            "Name": "BUSIENG240822_BENG_SARDINIEN_01SMW_AVC_512x288.mp4",
+            "AssetUUID": "7167ba1e991446878a9abcd2adcb0c35",
+            "SceneUUID": "3cd821ef-b084-450f-aba7-04d3a215db68",
+            "Visible": true,
+            "Enabled": true,
+            "Transform": {
+              "Position": [
+                "1.514",
+                "1.750",
+                "2.630"
+              ],
+              "Rotation": [
+                "0.000",
+                "0.000",
+                "0.000"
+              ],
+              "Scale": [
+                "1.000",
+                "1.000",
+                "1.000"
+              ]
+            }
+          }
+        ],
+        "Triggers": []
+      }
+    }
+  ]
+}

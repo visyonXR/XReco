@@ -1,0 +1,74 @@
+.object-wks-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #393939 0%, #2e2e2e 100%);
+  color: #e0e0e0;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #4a4a4a;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+  width: 400px;
+  max-width: 90vw;
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+.field-wks-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.apply-button {
+  margin: 20px auto;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #191a1d; 
+  color: #ccc;
+  border-radius: 20px;
+  border: 1px solid #646464;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
+}
+
+.apply-button:hover {
+  background-color: #3a3e47;
+}
+
+.rounded-input {
+  width: 40%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #3a3e47;
+  margin: 5px;
+  text-align: center;
+  color: #ccc;
+  background-color: #3a3e47;
+  pointer-events: all;
+}
+
+.close-button {
+  margin: 20px auto;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #191a1d; 
+  color: #ccc;
+  border-radius: 20px;
+  border: 1px solid #646464;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
+}
+
+.close-button:hover {
+  background-color: #3a3e47;
+}

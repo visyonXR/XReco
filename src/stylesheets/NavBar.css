@@ -1,0 +1,301 @@
+.App-header {
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(145deg, #3d3d3d 0%, #2e2e2e 100%);
+    border-bottom: 1px solid #4a4a4a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+    color: #e0e0e0;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-item {
+    position: relative;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #cccccc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(145deg, #3d3d3d 0%, #2e2e2e 100%);
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    min-width: 180px;
+    z-index: 1000;
+    margin-top: 4px;
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    font-size: 12px;
+    color: #cccccc;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+.navbar-label {
+    font-size: 24px;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+.nav-button {
+    margin-left: 10px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(145deg, #4a90e2 0%, #357abd 100%);
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+.nav-button:hover {
+    background: linear-gradient(145deg, #5ba0f2 0%, #4a90e2 100%);
+    box-shadow: 
+      0 4px 8px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+
+.xreco-logo{
+    width: 100px;
+    margin-left: 25px;
+}
+
+.left-text{
+    color: #e0e0e0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.left-text:hover {
+    color: #4a90e2;
+}
+
+.right-text{
+    color: #cccccc;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.right-text:hover {
+    color: #e0e0e0;
+}
+
+/* Submenu styles */
+.submenu-item {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: linear-gradient(145deg, #3d3d3d 0%, #2e2e2e 100%);
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    min-width: 160px;
+    z-index: 1001;
+    margin-left: 4px;
+}
+
+.submenu .dropdown-item {
+    padding: 10px 14px;
+    font-size: 11px;
+}
+
+/* Home button specific styling */
+.home-button {
+    background: rgba(74, 144, 226, 0.1);
+    border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.home-button:hover {
+    background: rgba(74, 144, 226, 0.2);
+    border-color: rgba(74, 144, 226, 0.5);
+    color: #ffffff;
+}
+
+/* Home Confirmation Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.home-confirm-modal {
+    background: linear-gradient(145deg, #3d3d3d 0%, #2e2e2e 100%);
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    min-width: 400px;
+    max-width: 500px;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #4a4a4a;
+    background: linear-gradient(145deg, #4a4a4a 0%, #3d3d3d 100%);
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    color: #cccccc;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body p {
+    margin: 0 0 12px 0;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.modal-body p:last-of-type {
+    margin-bottom: 24px;
+    color: #ff9999;
+    font-weight: 500;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.btn-cancel,
+.btn-confirm {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 80px;
+}
+
+.btn-cancel {
+    background: rgba(255, 255, 255, 0.1);
+    color: #cccccc;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-cancel:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-confirm {
+    background: rgba(220, 53, 69, 0.8);
+    color: #ffffff;
+    border: 1px solid rgba(220, 53, 69, 0.9);
+}
+
+.btn-confirm:hover {
+    background: rgba(220, 53, 69, 1);
+    border-color: rgba(220, 53, 69, 1);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}

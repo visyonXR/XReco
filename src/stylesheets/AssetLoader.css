@@ -1,0 +1,147 @@
+.object-assetloader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #393939 0%, #2e2e2e 100%);
+  color: #e0e0e0;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid #4a4a4a;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+  width: 400px;
+  max-width: 90vw;
+  animation: modalFadeIn 0.3s ease-out;
+  user-select: none;
+}
+
+/* Modal Header with draggable area and close button */
+.modal-header {
+  padding: 16px 20px;
+  background: linear-gradient(145deg, #4a4a4a 0%, #3a3a3a 100%);
+  border-bottom: 1px solid #2a2a2a;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.modal-close-button {
+  background: linear-gradient(145deg, #d9534f 0%, #c9302c 100%);
+  border: 1px solid #ac2925;
+  border-radius: 3px;
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 10px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-button:hover {
+  background: linear-gradient(145deg, #e9635f 0%, #d9433c 100%);
+  transform: scale(1.05);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-button:active {
+  background: linear-gradient(145deg, #c9302c 0%, #ac2925 100%);
+  transform: scale(0.95);
+  box-shadow: 
+    inset 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.field-assetloader-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 32px 0;
+}
+
+.assetloader-button {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  background-color: #191a1d; 
+  color: #ccc;
+  border-radius: 20px;
+  border: 1px solid #646464;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
+}
+
+.assetloader-button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.assetloader-button:hover {
+  background-color: #3a3e47;
+}
+
+.urlLoader-input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #3a3e47;
+  text-align: center;
+  color: #ccc;
+  background-color: #3a3e47;
+  pointer-events: all;
+}
+
+.close-button {
+  margin: 20px auto;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #191a1d; 
+  color: #ccc;
+  border-radius: 20px;
+  border: 1px solid #646464;
+  cursor: pointer;
+  display: block;
+  pointer-events: all;
+}
+
+.close-button:hover {
+  background-color: #3a3e47;
+}

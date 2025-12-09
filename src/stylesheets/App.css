@@ -1,0 +1,82 @@
+.contenedor-canvas {
+  display: grid;
+  grid-template-areas: 
+    "outliner canvas inspector"
+    "outliner canvas inspector";
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a2e33 0%, #1a1e23 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  pointer-events: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type=number] {
+-moz-appearance: textfield;
+appearance: textfield;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  pointer-events: auto;
+  background: #1a1e23;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::file-selector-button {
+  display: none;
+}
+
+.notification-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191a1d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  pointer-events: all;
+}
+
+.notification-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-message{
+  color: grey;
+}
+
+.close-notification {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: #191a1d;
+  color: #ccc;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  pointer-events: all;
+}
+
+.close-notification:hover {
+  background-color: #3a3e47;
+}
+
