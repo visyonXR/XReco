@@ -16,7 +16,7 @@ This open-source publication aims to promote transparency, reproducibility, and 
 
 XRCapsule is a comprehensive XR (Extended Reality) platform that enables the creation, editing, and deployment of immersive 3D experiences across multiple target devices including AR/VR headsets, smartphones, and web browsers. Built with React and Three.js, it provides a powerful web-based editor for creating interactive 3D scenes with support for various media types and deployment targets.
 
-## 🚀 Features
+##  Features
 
 ### Core Platform Features
 - **Multi-Device XR Support**: Deploy to Smartphone AR, Smartphone VR, Quest 3 AR, Virtual Production setups, and web-based 3D viewers
@@ -50,7 +50,7 @@ XRCapsule is a comprehensive XR (Extended Reality) platform that enables the cre
 - **Advanced Controls**: Orbit gizmo, viewport switching (top/front/side views)
 - **Responsive Design**: Adaptive UI for different screen sizes and input methods
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 ### Frontend
 - **React 18.2.0**: Modern React with hooks and context
@@ -72,7 +72,7 @@ XRCapsule is a comprehensive XR (Extended Reality) platform that enables the cre
 - **HDRI**: High Dynamic Range Image environments
 - **Post-processing**: Advanced rendering effects (N8AO, TiltShift)
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Node.js (version 14 or higher)
@@ -104,7 +104,7 @@ pip install flask flask-cors
 python app.py
 ```
 
-## 🎮 Usage
+##  Usage
 
 ### Getting Started
 1. **Login**: Access the platform through the login screen with Keycloak authentication
@@ -171,7 +171,7 @@ XRCapsule/
 - Device-specific configurations
 - Predefined asset collections
 
-## 🎯 Target Devices
+##  Target Devices
 
 XRCapsule supports deployment to multiple XR platforms:
 
@@ -238,7 +238,7 @@ cd py && python app.py  # Start Flask server for asset processing
 - **Performance Optimization**: Memoized components and debounced updates
 - **Responsive Design**: Mobile-first responsive layouts
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -246,11 +246,11 @@ cd py && python app.py  # Start Flask server for asset processing
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
-This project is part of the XReco ecosystem by Visyon Technologies.
+This project is part of the XReco ecosystem by Visyon360.
 
-## 🆘 Support
+## Support
 
 For technical support and questions:
 - Visit our documentation at `https://xrcapsule.visyon.tech/`
